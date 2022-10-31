@@ -1,0 +1,103 @@
+body{
+	font-family: sans-serif;
+	background-color: #ddd;
+}
+
+*{
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none;
+}
+.calender{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+}
+.month {
+	display: flex;
+	justify-content: space-between;
+  	padding: 10px 5px;
+  	width: 100%;
+  	background: #fff;
+  	font-weight: 600;
+
+}
+.month .para{
+	font-size: 15px;
+}
+
+.weekdays {
+  margin: 0;
+  padding:0 12px;
+  background-color: #fff;
+}
+
+.weekdays li {
+  display: inline-block;
+  margin:5px 9px;
+  color: #666;
+  text-align: center;
+}
+.weekdays .day{
+	color: #ED3779;
+}
+
+.days {
+  padding: 10px 0;
+  background: #fff;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:14px;
+  color: #777;
+  font-weight: bold;
+  border: 1px solid #E9F0FC;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #2A304A;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.notifications{
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+}
+.notifications h5{
+	font-size: 17px;
+}
+.notifications p{
+	color: #6F7883;
+}
+.notifications-box{
+	border: 1px solid #E9F0FC;
+	padding: 10px;
+}
+.notifications-box i{
+	font-size: 10px;
+	color: #696BE0;
+}
+.notifications-box .icon{
+	color: #29CC39;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (min-width: 430px) and (max-width: 1200px) {
+	.weekdays{
+		padding: 0;
+	}
+  .weekdays li {
+  	width: 7%;
+  	margin: 0 8px;
+  }
+}
